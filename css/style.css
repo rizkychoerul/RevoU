@@ -1,0 +1,84 @@
+body {
+  background-color: #1a1a2e;
+  color: #4a90e2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  background-color: #282846;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  flex: 1;
+  background-color: #404060;
+  color: #ffffff;
+}
+
+::placeholder {
+    color: #cccccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#filter-btn {
+    background-color: #3a3a5a;
+    color: #4a90e2;
+}
+
+button:hover {
+  background-color: #6e6e8f;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #4e4e6f;
+  text-align: center;
+}
+
+th {
+    color: #4a90e2;
+  background-color: #3e3e5f;
+}
+
+td {
+    color: #4a90e2;
+  background-color: #2e2e3f;
+}

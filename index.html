@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>RevoU</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <table class="table-auto border-collapse w-full mt-8">
-    <thead>
-        <tr class="bg-gray-200">
-            <th class="border px-4 py-2 text-center">NPM</th>
-            <th class="border px-4 py-2 text-center">Nama</th>
-            <th class="border px-4 py-2 text-center">Jurusan</th>
-        </tr>
-    </thead>
-    <tbody>
+  <div class="todo-container">
+    <h1>Todo List</h1>
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Add a todo...">
+      <input type="date" id="date-input" placeholder="dd/mm/yyyy">
+      <button id="add-task-btn">+</button>
+    </div>
+    <div class="action-buttons">
+      <button id="filter-btn">FILTER</button>
+      <button id="delete-all-btn">DELETE ALL</button>
+    </div>
+    <table>
+      <thead>
         <tr>
-            <td class="border px-4 py-2">049</td>
-            <td class="border px-4 py-2">Rizky</td>
-            <td class="border px-4 py-2">Informatika</td>
+          <th>TASK</th>
+          <th>DUE DATE</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
         </tr>
-        <tr class="bg-gray-50">
-            <td class="border px-4 py-2">050</td>
-            <td class="border px-4 py-2">Syihab</td>
-            <td class="border px-4 py-2">Sipil</td>
-        </tr>
-    </tbody>
-</table>
+      </thead>
+      <tbody id="task-list">
+        <tr><td colspan="4">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
