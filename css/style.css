@@ -37,6 +37,11 @@ input[type="text"], input[type="date"] {
     color: #cccccc;
 }
 
+input[type="text"]:focus, input[type="date"]:focus {
+  outline: none;
+  border: 2px solid #4a90e2;
+}
+
 button {
   padding: 10px 15px;
   border: none;
